@@ -9,7 +9,52 @@
     <link rel="icon" href="https://www.keynate.com/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
     <script>
+// Detect if the page is loaded in an embedded browser (Instagram, Twitter, Facebook, etc.)
+function isEmbeddedBrowser() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+    // Check for common in-app browser user agents
+    return /FBAN|FBAV|Instagram|Twitter/i.test(userAgent);
+}
+
+// Redirect to the default browser if in an embedded browser
+if (isEmbeddedBrowser()) {
+    // Create a full-screen overlay with a button to open in browser
+    document.addEventListener('DOMContentLoaded', function() {
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100%';
+        overlay.style.height = '100%';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
+        overlay.style.zIndex = '9999';
+        overlay.style.display = 'flex';
+        overlay.style.flexDirection = 'column';
+        overlay.style.justifyContent = 'center';
+        overlay.style.alignItems = 'center';
+        overlay.style.color = 'white';
+        overlay.style.padding = '20px';
+        overlay.style.textAlign = 'center';
+        
+        overlay.innerHTML = `
+            <h2 style="font-size: 24px; margin-bottom: 20px;">Please open in your browser</h2>
+            <p style="margin-bottom: 30px; font-size: 16px;">For the best experience, please open this link in your default browser.</p>
+            <a href="https://news-webiste-development.keynate.com/" style="background: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">Open in Browser</a>
+            <p style="margin-top: 20px; font-size: 14px; color: #aaa;">Tap the menu icon (⋮ or ⠇) and select "Open in Browser"</p>
+        `;
+        
+        document.body.appendChild(overlay);
+        
+        // Also attempt to open the URL in the default browser
+        window.location.href = 'https://news-webiste-development.keynate.com/';
+    });
+}
+</script>
+   
+   <script>
         tailwind.config = {
             theme: {
                 extend: {
