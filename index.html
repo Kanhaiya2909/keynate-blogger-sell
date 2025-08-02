@@ -3,11 +3,1005 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
+    <title>Premium News Website Solutions | Keynate - Delivered in 24 Hours</title>
+    <meta name="description" content="Professional news website development with Google News approval, Discover integration. Get your website delivered within 24 hours. Pay after your website goes live!">
+    <meta property="og:image" content="https://www.keynate.com/meta-image.jpg">
+    <link rel="icon" href="https://www.keynate.com/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#f59e0b',
+                        dark: '#1f2937',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .floating-button {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+            }
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .popular-plan {
+            border: 2px solid #f59e0b;
+            position: relative;
+            overflow: visible;
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #f59e0b;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            background-color: #f3f4f6;
+        }
+        
+        .admin-demo {
+            background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            color: white;
+        }
+        
+        .admin-demo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.4);
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello world!!</h1>
+<body class="bg-gray-50">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918051902909?text=I%20want%20to%20order%20a%20news%20website" 
+       class="floating-button fixed bottom-6 right-6 bg-red-500 hover:bg-red-600 text-white rounded-full p-4 shadow-lg z-50 flex items-center justify-center w-16 h-16">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="https://www.keynate.com/assets/logo/keynate.svg" alt="Keynate" class="h-10">
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium">Home</a>
+                    <a href="#demo" class="text-gray-700 hover:text-primary font-medium">Demo</a>
+                    <a href="#features" class="text-gray-700 hover:text-primary font-medium">Features</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-primary font-medium">Pricing</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-primary font-medium">Clients</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary font-medium">FAQ</a>
+                    <a href="#order" class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-md font-medium transition duration-300">Order Now</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white pb-4">
+                <a href="#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="#demo" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Demo</a>
+                <a href="#features" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Features</a>
+                <a href="#pricing" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Pricing</a>
+                <a href="#testimonials" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Clients</a>
+                <a href="#faq" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">FAQ</a>
+                <a href="#order" class="block bg-primary text-white py-2 px-4 rounded-md mx-4 mt-2 text-center">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="bg-yellow-100 text-yellow-800 inline-block px-3 py-1 rounded-full text-sm font-bold mb-4">
+                        <i class="fas fa-bolt mr-1"></i> Delivered within 24 hours
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Premium News Website <span class="text-accent">Delivered in 24 Hours</span> & Pay After It Goes Live!</h1>
+                    <p class="text-xl mb-8 opacity-90">Get your content featured on Google News, Discover, and Web Stories with our professionally developed news websites that drive massive traffic and revenue.</p>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#order" class="bg-accent hover:bg-yellow-600 text-dark font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                            <i class="fas fa-bolt mr-2"></i> Get Started Today
+                        </a>
+                        <a href="#demo" class="bg-white hover:bg-gray-100 text-dark font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                            <i class="fas fa-eye mr-2"></i> View Demos
+                        </a>
+                    </div>
+                    
+                    <div class="mt-10 flex items-center">
+                        <div class="flex -space-x-2">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Happy client">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Happy client">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Happy client">
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-medium">Trusted by 250+ Publishers</p>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="ml-2">4.9/5 (128 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative bg-white rounded-xl shadow-2xl overflow-hidden">
+                        <div class="absolute top-0 left-0 bg-accent text-dark text-xs font-bold px-2 py-1">LIVE TRAFFIC</div>
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="News Website Traffic" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-4">
+                                <div>
+                                    <h3 class="font-bold text-dark">TeluguTechWorld.com</h3>
+                                    <p class="text-gray-600 text-sm">1.24M YouTube Subscribers</p>
+                                </div>
+                                <div class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs font-bold">LIVE</div>
+                            </div>
+                            <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-600">Today's Visitors</span>
+                                    <span class="font-bold text-dark">24,589</span>
+                                </div>
+                                <div class="w-full bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <!-- <div class="grid grid-cols-3 gap-2 text-center">
+                                <div class="bg-gray-100 p-2 rounded">
+                                    <p class="text-xs text-gray-600">Google News</p>
+                                    <p class="font-bold text-dark">8,742</p>
+                                </div>
+                                <div class="bg-gray-100 p-2 rounded">
+                                    <p class="text-xs text-gray-600">Google Discover</p>
+                                    <p class="font-bold text-dark">12,456</p>
+                                </div>
+                                <div class="bg-gray-100 p-2 rounded">
+                                    <p class="text-xs text-gray-600">Direct</p>
+                                    <p class="font-bold text-dark">3,391</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who is it for? -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Who Needs Our News Website Solutions?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Whether you're an established publisher or just starting out, our solutions are designed to help you succeed in the digital news space.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-newspaper text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Traditional Publishers</h3>
+                    <p class="text-gray-600">Newspapers and magazines transitioning to digital with premium features that maintain your brand authority while expanding your online reach.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bullhorn text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Independent Journalists</h3>
+                    <p class="text-gray-600">Build your own media brand with professional tools that help you compete with established news outlets and monetize your content effectively.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Entrepreneurs</h3>
+                    <p class="text-gray-600">Monetize your expertise in any niche with a news platform that attracts premium advertisers and generates multiple revenue streams.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-white">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-2">Pay After Your Website Goes Live!</h3>
+                        <p class="opacity-90">We're so confident in our service that you only pay after your website is live and you're completely satisfied.</p>
+                    </div>
+                    <div class="md:w-1/3 text-center md:text-right">
+                        <a href="#order" class="bg-white hover:bg-gray-100 text-dark font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                            <i class="fas fa-hand-holding-usd mr-2"></i> Get Started Risk-Free
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">See Our News Websites in Action</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explore live examples of our premium news website templates that are already driving traffic and revenue for our clients.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tech News Template" class="w-full h-48 object-cover">
+                        <div class="absolute bottom-0 left-0 bg-primary text-white px-3 py-1 text-sm font-bold">TECH</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tech News Template</h3>
+                        <p class="text-gray-600 mb-4">Modern design optimized for gadget reviews and tech updates with Google Discover integration.</p>
+                        <a href="https://blogger1.keynate.com/" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                            View Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="General News Template" class="w-full h-48 object-cover">
+                        <div class="absolute bottom-0 left-0 bg-red-500 text-white px-3 py-1 text-sm font-bold">GENERAL</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">General News Template</h3>
+                        <p class="text-gray-600 mb-4">Versatile design perfect for newspapers covering multiple categories with PWA support.</p>
+                        <a href="https://blogger2.keynate.com/" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                            View Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Business News Template" class="w-full h-48 object-cover">
+                        <div class="absolute bottom-0 left-0 bg-green-500 text-white px-3 py-1 text-sm font-bold">BUSINESS</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Business News Template</h3>
+                        <p class="text-gray-600 mb-4">Professional layout for financial news and market updates with data visualization tools.</p>
+                        <a href="https://blogger3.keynate.com/" target="_blank" class="text-primary font-medium hover:underline flex items-center">
+                            View Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Admin Demo Highlight -->
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden mb-8">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Admin Dashboard" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-4">Explore Our Powerful Admin Dashboard</h3>
+                        <p class="text-gray-600 mb-6">Manage your news website effortlessly with our intuitive admin panel. Create content, track performance, and monetize your traffic all from one place.</p>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-key text-yellow-400"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-yellow-700">
+                                        <span class="font-bold">Login Details:</span><br>
+                                        Username: <span class="font-mono">demo</span><br>
+                                        Password: <span class="font-mono">demo</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://demo-blogger.keynate.com/" target="_blank" class="admin-demo inline-block text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            <i class="fas fa-tachometer-alt mr-2"></i> View Admin Dashboard
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-gray-600 mb-6">Get your professional news website delivered within 24 hours!</p>
+                <a href="#order" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                    <i class="fas fa-rocket mr-2"></i> Order Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Premium Features That Drive Results</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our news websites come packed with powerful features designed to maximize your traffic, engagement, and revenue.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fab fa-google text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Google News Approval</h3>
+                    <p class="text-gray-600">Our websites are optimized to meet all Google News technical requirements, increasing your chances of approval and visibility.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Google Discover Integration</h3>
+                    <p class="text-gray-600">Get your content featured in Google's Discover feed, driving massive traffic from mobile users.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">PWA (Progressive Web App)</h3>
+                    <p class="text-gray-600">Let readers install your news site as an app on their devices, increasing engagement and return visits.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-paper-plane text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Push Notifications</h3>
+                    <p class="text-gray-600">Send breaking news alerts directly to your readers' devices, keeping them engaged with your content.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-pie text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Advanced SEO Optimization</h3>
+                    <p class="text-gray-600">Built-in SEO features that help your content rank higher in search results and attract organic traffic.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl feature-card transition duration-300">
+                    <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-envelope text-primary text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Marketing Tools</h3>
+                    <p class="text-gray-600">Build and monetize your email list with built-in newsletter functionality and subscriber management.</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-xl p-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-6 md:mb-0">
+                        <h3 class="text-2xl font-bold mb-2">Need a Custom Feature?</h3>
+                        <p class="text-gray-600">We can customize any aspect of your news website to meet your specific requirements. Contact us to discuss your needs.</p>
+                    </div>
+                    <div class="md:w-1/3 text-center md:text-right">
+                        <a href="https://wa.me/918051902909?text=I%20need%20custom%20features%20for%20my%20news%20website" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                            <i class="fas fa-headset mr-2"></i> Ask About Customization
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Choose the perfect plan for your news publishing needs. Pay after your website goes live!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 border-b">
+                        <h3 class="text-2xl font-bold text-center mb-2">Pro</h3>
+                        <p class="text-gray-600 text-center mb-4">Perfect for independent journalists and small publishers</p>
+                        <div class="text-center mb-4">
+                            <span class="text-4xl font-bold">₹12,000</span>
+                            <span class="text-gray-600">/one-time</span>
+                        </div>
+                        <a href="#order" class="block bg-gray-100 hover:bg-gray-200 text-dark font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                            Get Started
+                        </a>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Google News Approval</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Google Discover Integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Google Web Stories</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Google Instant Indexing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Advanced SEO</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>RSS, Atom, Sitemap</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Fully Responsive Design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>PWA App</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Push Notifications</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Pro Max Plan -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 border-b">
+                        <h3 class="text-2xl font-bold text-center mb-2">Pro Max</h3>
+                        <p class="text-gray-600 text-center mb-4">Best for growing publishers with multiple writers</p>
+                        <div class="text-center mb-4">
+                            <span class="text-4xl font-bold">₹15,000</span>
+                            <span class="text-gray-600">/one-time</span>
+                        </div>
+                        <a href="#order" class="block bg-gray-100 hover:bg-gray-200 text-dark font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                            Get Started
+                        </a>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Everything in Pro</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Email Marketing Tools</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Multi-author Management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Advanced Analytics Dashboard</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Pro Ultra Max Plan (Popular) -->
+                <div class="bg-white rounded-xl shadow-xl overflow-visible popular-plan">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="p-6 border-b">
+                        <h3 class="text-2xl font-bold text-center mb-2">Pro Ultra Max</h3>
+                        <p class="text-gray-600 text-center mb-4">For serious publishers who want everything</p>
+                        <div class="text-center mb-4">
+                            <span class="text-4xl font-bold">₹18,000</span>
+                            <span class="text-gray-600">/one-time</span>
+                        </div>
+                        <a href="#order" class="block bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                            Get Started
+                        </a>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span><strong>Everything in Pro Max</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Online Tools Integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Custom Widgets</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>VIP Support (24/7)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>2 Free Add-ons (₹4,000 value)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Free Basic SEO Setup</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add-ons Section -->
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">Premium Add-ons</h3>
+                <p class="text-gray-600 text-center mb-8">Enhance your news website with these powerful additional features</p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Blog Module</h4>
+                        <p class="text-gray-600 mb-3">Add a dedicated blog section to your news site</p>
+                        <div class="font-bold text-primary">₹2,000</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Fact-Check Module</h4>
+                        <p class="text-gray-600 mb-3">Add fact-checking functionality with special templates</p>
+                        <div class="font-bold text-primary">₹2,000</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Press Release Module</h4>
+                        <p class="text-gray-600 mb-3">Accept and display press releases from businesses</p>
+                        <div class="font-bold text-primary">₹2,000</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Jobs Module</h4>
+                        <p class="text-gray-600 mb-3">Add a job board to monetize your traffic</p>
+                        <div class="font-bold text-primary">₹2,000</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Event Module</h4>
+                        <p class="text-gray-600 mb-3">List and promote local events</p>
+                        <div class="font-bold text-primary">₹1,500</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Product Module</h4>
+                        <p class="text-gray-600 mb-3">Add product reviews and comparisons</p>
+                        <div class="font-bold text-primary">₹3,000</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">FAQ Module</h4>
+                        <p class="text-gray-600 mb-3">Create and manage FAQ pages</p>
+                        <div class="font-bold text-primary">₹1,500</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Local Business Module</h4>
+                        <p class="text-gray-600 mb-3">Feature local businesses with directory</p>
+                        <div class="font-bold text-primary">₹1,500</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Google Discover Optimization</h4>
+                        <p class="text-gray-600 mb-3">Special setup to maximize Discover traffic</p>
+                        <div class="font-bold text-primary">₹4,000</div>
+                    </div>
+                    <div class="border rounded-lg p-4">
+                        <h4 class="font-bold mb-2">Live Blog Posting</h4>
+                        <p class="text-gray-600 mb-3">Real-time updates for breaking news</p>
+                        <div class="font-bold text-primary">₹3,000</div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 mb-4">Bundle 3 add-ons and get 10% discount | Bundle 5 add-ons and get 20% discount</p>
+                    <a href="https://wa.me/918051902909?text=I%20want%20to%20order%20add-ons%20for%20my%20news%20website" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                        <i class="fas fa-shopping-cart mr-2"></i> Order Add-ons
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Trusted by Leading Publishers</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Don't just take our word for it. Here's what our clients say about our news website solutions.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-50 p-6 rounded-xl testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://www.telugutechworld.com/view/category-image/photo2025-05-08-130907.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Rajak</h4>
+                            <a href="https://www.telugutechworld.com/" target="_blank" class="text-gray-600 text-sm hover:text-primary">TeluguTechWorld.com</a>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">"Since switching to Keynate's solution, our traffic from Google News and Discover has increased by 300%. The PWA feature has dramatically improved our reader retention. Our 1.24M YouTube subscribers now have a premium destination for our written content."</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://www.youtube.com/telugutechworld" target="_blank" class="text-red-600 hover:text-red-800">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/telugutechworld" target="_blank" class="text-pink-600 hover:text-pink-800">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Bharti Kumari</h4>
+                            <a href="https://www.heycolleagues.com/" target="_blank" class="text-gray-600 text-sm hover:text-primary">HeyColleagues.com</a>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">"The job board add-on has become our main revenue source. We went from just covering HR news to actually connecting employers with candidates. The Pro Max plan was worth every rupee for the email marketing tools alone."</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Kuldeep Sain</h4>
+                            <a href="https://www.itijobs.co/" target="_blank" class="text-gray-600 text-sm hover:text-primary">ITIJobs.co</a>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">"Getting approved for Google News was surprisingly easy with their optimized setup. Our niche technical content now reaches 5x more readers. The push notifications keep our audience engaged between posts."</p>
+                </div>
+            </div>
+            
+            <!-- Client Logos -->
+            <div class="bg-gray-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-8 text-center">Our Clients Include</h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                    <div class="text-center">
+                        <a href="https://www.telugutechworld.com/" target="_blank" class="block bg-white p-4 rounded-lg shadow-sm mb-2 hover:shadow-md transition">
+                            <div class="text-xl font-bold text-gray-800">TeluguTechWorld</div>
+                        </a>
+                        <p class="text-sm text-gray-600">1.24M YouTube Subscribers</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.heycolleagues.com/" target="_blank" class="block bg-white p-4 rounded-lg shadow-sm mb-2 hover:shadow-md transition">
+                            <div class="text-xl font-bold text-gray-800">HeyColleagues</div>
+                        </a>
+                        <p class="text-sm text-gray-600">HR & Career News</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.itijobs.co/" target="_blank" class="block bg-white p-4 rounded-lg shadow-sm mb-2 hover:shadow-md transition">
+                            <div class="text-xl font-bold text-gray-800">ITIJobs</div>
+                        </a>
+                        <p class="text-sm text-gray-600">Technical Education Portal</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://www.electionliveresult.in/" target="_blank" class="block bg-white p-4 rounded-lg shadow-sm mb-2 hover:shadow-md transition">
+                            <div class="text-xl font-bold text-gray-800">ElectionLiveResult</div>
+                        </a>
+                        <p class="text-sm text-gray-600">Political News Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Everything you need to know about our news website solutions.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <!-- FAQ Item -->
+                    <div class="border-b faq-item">
+                        <button class="faq-question w-full text-left p-6 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                            <span class="text-lg font-medium">Will I get AdSense approval with your websites?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600">Our websites are optimized to meet Google AdSense requirements, significantly improving your chances of approval. With a strong track record of successful approvals, we also offer expert guidance on content strategies to maximize your likelihood of getting approved.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item -->
+                    <div class="border-b faq-item">
+                        <button class="faq-question w-full text-left p-6 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                            <span class="text-lg font-medium">How many ways can I earn money with your news websites?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600 mb-4">Our platforms support multiple revenue streams:</p>
+                            <ol class="list-decimal pl-5 space-y-2 text-gray-600">
+                                <li><strong>AdSense & Display Ads:</strong> Earn from Google AdSense and other ad networks</li>
+                                <li><strong>Affiliate Marketing:</strong> Earn commissions by promoting products through your content</li>
+                                <li><strong>Email Marketing:</strong> Monetize your subscriber list with sponsored newsletters</li>
+                                <li><strong>Premium Content:</strong> Offer paid memberships for exclusive content</li>
+                                <li><strong>Sponsored Content:</strong> Get paid to feature brands and products</li>
+                                <li><strong>Job Boards & Classifieds:</strong> Earn from listings (with Pro Max and higher plans)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item -->
+                    <div class="border-b faq-item">
+                        <button class="faq-question w-full text-left p-6 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                            <span class="text-lg font-medium">How long does it take to get Google News approved?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600">Our websites are pre-optimized to meet Google News technical requirements, which significantly improves approval chances. Typically, approval takes 2-4 weeks after submission, but we've seen some clients get approved in as little as 7 days. We'll guide you through the entire application process.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item -->
+                    <div class="border-b faq-item">
+                        <button class="faq-question w-full text-left p-6 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                            <span class="text-lg font-medium">Do you really deliver websites within 24 hours?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600">Yes! For standard template setups with all content ready, we guarantee delivery within 24 hours. Customizations may take additional time depending on complexity. Our record is 8 hours from order to launch!</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item -->
+                    <div class="border-b faq-item">
+                        <button class="faq-question w-full text-left p-6 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                            <span class="text-lg font-medium">What if I need help after my website is live?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600">All plans include 30 days of free support after launch. Pro plans get email support, Pro Max includes priority chat support, and Ultra Max comes with 24/7 VIP support. We also offer affordable maintenance plans for ongoing support, updates, and optimizations.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item -->
+                    <div class="border-b faq-item">
+                        <button class="faq-question w-full text-left p-6 hover:bg-gray-50 focus:outline-none flex justify-between items-center">
+                            <span class="text-lg font-medium">Can I upgrade my plan later if I need more features?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <p class="text-gray-600">Absolutely! You can upgrade anytime by paying the difference between your current plan and the upgraded plan. We make the transition seamless with no downtime. Many of our clients start with Pro and upgrade as their traffic and revenue grows.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 mb-6">Still have questions? We're happy to help!</p>
+                    <a href="https://wa.me/918051902909?text=I%20have%20questions%20about%20your%20news%20website%20solutions" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                        <i class="fas fa-question-circle mr-2"></i> Ask Your Question
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="order" class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Launch Your Premium News Website in 24 Hours?</h2>
+                <p class="text-xl mb-8 opacity-90">Join hundreds of publishers who trust our solutions to power their digital news presence. Pay only after your website goes live!</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/918051902909?text=I%20want%20to%20order%20the%20Pro%20plan" class="bg-accent hover:bg-yellow-600 text-dark font-bold py-4 px-8 rounded-lg text-center transition duration-300 text-lg">
+                        <i class="fas fa-bolt mr-2"></i> Order Pro Plan (₹12,000)
+                    </a>
+                    <a href="https://wa.me/918051902909?text=I%20want%20to%20order%20the%20Pro%20Ultra%20Max%20plan" class="bg-white hover:bg-gray-100 text-dark font-bold py-4 px-8 rounded-lg text-center transition duration-300 text-lg">
+                        <i class="fas fa-crown mr-2"></i> Order Ultra Max (₹18,000)
+                    </a>
+                </div>
+                
+                <div class="mt-10 bg-white bg-opacity-10 rounded-lg p-4 inline-block">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-clock text-yellow-400 mr-2"></i>
+                        <span class="font-medium">Limited slots available - <span id="countdown" class="font-bold">03:59:59</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <img src="https://www.keynate.com/assets/logo/keynate_white.png" alt="Keynate" class="h-10 mb-4">
+                    <p class="text-gray-400">Premium news website development solutions that help publishers succeed in the digital age.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#demo" class="text-gray-400 hover:text-white transition">Demos</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="https://wa.me/918051902909" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                        <li><a href="https://www.keynate.com/privacy-policy" target="_blank" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="https://www.keynate.com/terms-of-use" target="_blank" class="text-gray-400 hover:text-white transition">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-sm"></i>
+                            <span>+91 8051902909</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-2 text-sm"></i>
+                            <a href="https://wa.me/918051902909" class="hover:text-white">Chat on WhatsApp</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-sm"></i>
+                            <span>contact@keynate.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Keynate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open answers
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        otherQuestion.nextElementSibling.classList.add('hidden');
+                        otherQuestion.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+        
+        // Countdown timer
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
